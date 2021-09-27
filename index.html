@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <section id="registration">
+        <h3>Silakan Registhasi</h3><br>
+        <div class="container1">
+            <form>
+                <label for="nama">Nama:</label><br>
+                <input id="nama" type="text"><br><br>
+
+                <label for="username">Username/ Email:</label><br>
+                <input id="username" type="text"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input id="password" type="password"><br><br>
+                <label for="password2">Ulangi Password:</label><br>
+                <input id="password2" type="password"><br><br>
+
+                <label>Jenis Kelamin:</label><br>
+                <input id="pria" type="radio" name="jk" value="pria">
+                <label for="pria">Pria</label><br>
+                <input id="wanita" type="radio" name="jk" value="wanita">
+                <label for="wanita">Wanita</label><br><br>
+
+                <label for="agama">Agama:</label><br>
+                <select name="agama" id="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                </select><br><br>
+
+                <label for="hobi">Hobi:</label><br>
+                <input type="checkbox" name="sepakbola" id="sepakbola" value="Sepak Bola">
+                <label for="sepakbola">Sepak Bola</label>
+                <input type="checkbox" name="Voli" id="Voli" value="Voli">
+                <label for="Voli">Voli</label>
+                <input type="checkbox" name="memancing" id="memancing" value="Memancing">
+                <label for="memancing">Memancing</label>
+                <input type="checkbox" name="memasak" id="memasak" value="Meamasak">
+                <label for="memasak">Memasak</label><br><br>
+
+                <input type="button" value="Register" class="btn1">
+
+        </div>
+
+        </form>
+    </section>
+
+    <section id="list-user">
+        <div class="container2">
+            <table id="#page">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Agama</th>
+                        <th>Hobi</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <input type="button" value="Kembali" class="btn2">
+        </div>
+    </section>
+    
+</body>
+
+</html>
