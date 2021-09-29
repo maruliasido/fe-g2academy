@@ -1,0 +1,106 @@
+body{
+    font-family:sans-serif;
+    background-image:url("img/2.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    
+}
+
+button{
+    width: 150px;
+}
+
+h3{
+    margin: auto;
+    color:rgb(70, 168, 168);
+}
+
+.nav-bar{
+    display: flex;
+    background-image:linear-gradient(to right, #fce7fd,whitesmoke);
+    
+    box-sizing: border-box;
+    width: 100%; 
+    color:rgb(70, 168, 168);
+    font-weight: bold;
+   
+}
+
+.menu{
+    padding: 10px;
+}
+
+
+.menu:hover, .menu.selected{
+    cursor: pointer;
+    background-color:#c860dd;
+    color: white;
+    
+}
+
+[data-section-content] {
+    display: none;
+  }
+
+[data-section-content].show{
+    display: flex;
+    flex-direction:column;
+}
+
+
+
+form{
+    padding-left: 30px;
+    
+}
+
+table{
+    margin:20px 0 0 20px;
+    width: 60%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: azure;
+    
+}
+
+[type="button"]{
+    width: 100px;
+    margin: 20px;
+}
+
+th{
+    border: 1px solid black;
+    padding: 10px 30px;
+}
+td{
+    border: 1px solid black;
+    padding: 10px 30px;
+}
+
+#registration{
+    background-color: rgb(245, 208, 233);
+    opacity: 75%;
+    width: 40%;
+    border-radius: 5%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+ 
+}
+
+#logins{
+    background-color: rgb(245, 208, 233);
+    opacity: 75%;
+    width: 40%;
+    border-radius: 5%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+ 
+}
+

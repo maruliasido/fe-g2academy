@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <script defer src="pagiantion.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="menu" data-menu="home">HOME</div>
+        <div class="menu" data-menu="login">LOGIN</div>
+    </div>
+    <section data-section-content="home">
+
+    </section>
+    <section id="registration" data-section-content="register">
+        <h3>Silakan Input User</h3><br>
+        <form name="register">
+            <label for="nama">Nama:</label><br>
+            <input id="nama" type="text"><br><br>
+
+            <label for="username2">Username:</label><br>
+            <input id="username2" type="text"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input id="email" type="text"><br><br>
+
+            <label for="address">Address</label><br>
+            <input id="address" type="text"><br><br>
+
+            <input type="button" value="Register" submit-user="form">
+        </form>
+    </section>
+
+    <section id="edit" data-section-content="edit">
+        <h3>Silakan Edit User</h3><br>
+        <form name="edit">
+            <label for="edit-nama">Nama:</label><br>
+            <input id="edit-nama" type="text"><br><br>
+
+            <label for="edit-username">Username:</label><br>
+            <input id="edit-username" type="text"><br><br>
+
+            <label for="edit-email">Email:</label><br>
+            <input id="edit-email" type="text"><br><br>
+
+            <label for="edit-address">Address</label><br>
+            <input id="edit-address" type="text"><br><br>
+
+            <input type="button" value="Update" edit-user="form" update="form">
+
+        </form>
+
+    </section>
+    <section id="logins" data-section-content="login">
+        <h3>Silakan Login</h3><br>
+        <form name="login">
+
+
+            <label for="username">Username:</label><br>
+            <input id="username" type="text"><br><br>
+
+            <label for="password">Password</label><br>
+            <input id="password" type="password"><br><br>
+
+            <input type="button" value="Login" login="form">
+
+        </form>
+    </section>
+
+    <section id="list-users" data-section-content="list-user">
+
+        <input type="button" value="Refresh" refresh="list">
+        <input type="button" value="Masukan Data" id="regis" add-list="a">
+
+        <table id="#page">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </section>
+
+</body>
+
+</html>
