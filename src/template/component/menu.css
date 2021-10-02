@@ -1,0 +1,9 @@
+.menu{
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+.menu:hover{
+    background-color: rgb(198, 17, 243);
+    cursor: pointer;
+}

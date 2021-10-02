@@ -8,7 +8,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div style={{backgroundImage: `url(img/background.jpg")`}}>
+      <div >
         <Body/>
       </div>
     );

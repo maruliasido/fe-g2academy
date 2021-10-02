@@ -1,18 +1,28 @@
 table{
     margin:20px 0 0 20px;
     width: 60%;
-    border: 1px solid black;
+
     border-collapse: collapse;
-    background-color: azure;
+    background-color: rgb(245, 147, 228);
+    opacity: 70%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
     
 }
 
 
 th{
-    border: 1px solid black;
+    background-color:rgb(224, 153, 221) ;
+    border: 1px solid white;
     padding: 10px 30px;
 }
 td{
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 10px 30px;
+    background-color: #f2f2f2;
+}
+
+td:hover{
+    background-color: #dbc7c7;
 }
