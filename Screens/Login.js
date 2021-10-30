@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, ImageBackground, View, TextInput, Alert } from 'react-native'
+import { Text, StyleSheet, ImageBackground, View, TextInput, Alert,Keyboard } from 'react-native'
 import { Button } from 'react-native-elements';
 
 export default class Login extends Component {
@@ -7,15 +7,16 @@ export default class Login extends Component {
     super(props);
     this.state = {
       username: "",
-      passowrd: ""
+      password: ""
     }
+    this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this.keyboardDidShow);
+    this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this.keyboardDidHide);
+
   }
 
-  changeText = (e) => {
-    this.setState({
-      text: e
-    })
-  }
+  keyboardDidShow = () => this.setState({ isKeyboardShown: true })
+  keyboardDidHide = () => this.setState({ isKeyboardShown: false })
+
 
   buttonLoginPressed = () => {
     const { username, password } = this.state
@@ -37,12 +38,13 @@ export default class Login extends Component {
           <TextInput
             style={stylesBody.input}
             placeholder={"Masukan Nama"}
-            onChangeText={this.changeText}
+            onChangeText={(username) => this.setState({ username })}
             value={this.state.username} />
           <TextInput
             style={stylesBody.input}
+            secureTextEntry={true}
             placeholder={"Masukan Password"}
-            onChangeText={this.changeText}
+            onChangeText={(password) => this.setState({ password })}
             value={this.state.password} />
           <Button
             title={"Masuk"}

@@ -1,12 +1,24 @@
 import React, { Component } from 'react'
-import { View } from 'react-native'
+import { View, StyleSheet,Text } from 'react-native'
 
 export default class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            activeDate: new Date()
+        }
+    }
+
+
     render() {
         return (
             <View>
-                this is home
+                <Text>
+                    abc
+                </Text>
             </View>
         )
     }
+
 }
+
